@@ -11,5 +11,5 @@
 
 from director_class import director
 
-director = director()
-director.start_game()
+Director = director()
+Director.start_game()
