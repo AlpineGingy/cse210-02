@@ -1,8 +1,3 @@
-from hashlib import new
-from lib2to3.pgen2.token import GREATEREQUAL
-
-from numpy import greater
-from pandas import value_counts
 from card_class import Card
 
 
@@ -44,7 +39,7 @@ class director:
             self.score += 100
         elif self.HorL == "L" and new_value < old_value:
             self.score += 100
-        elif self.HorL == "L" or "H" and new_value == old_value:
+        elif new_value == old_value:
             self.score = self.score
         else:
             self.score -= 75
@@ -56,13 +51,9 @@ class director:
         else:
             self.isplaying = True
         
-        
 
-        pass
 
     def outputs(self):
         play = input('Do you want to play again? [Y/N] ').upper()
         self.isplaying = (play == 'Y')
-
-        pass
     
