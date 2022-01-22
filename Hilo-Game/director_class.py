@@ -31,12 +31,11 @@ class director:
         #Lets the user choose higher or lower
             print(f'\nThe value of the card is "{self.card.value}"')
             self.HorL = input('Higher or Lower? [H/L] ').upper()
-
         #Needs to return the variable so it can become global to be inputed into the updates function
             return old_value
         
         else:
-            return
+            pass
 
     def updates(self, old_value):
         #Sets new cards value
@@ -76,6 +75,3 @@ class director:
         else:
             play = input('Would you like to draw again? [Y/N]: ').upper()
             self.isplaying = (play == 'Y')
-            
-
-        pass
