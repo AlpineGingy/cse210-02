@@ -28,3 +28,4 @@ root                    (project root folder)
 ---
 * Jordan Kraude
 * Andruw Sorensen
+* Tyler Robert Sparks
