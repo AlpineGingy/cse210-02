@@ -31,7 +31,7 @@ class director:
             old_value = self.card.value
         #Lets the user choose higher or lower
             card_name = self.card.card_name(old_value)
-            print(f'\nThe value of the card is "{card_name}"')
+            print(f'\nThe value of the card is "the {card_name} of {self.card.suit}"')
             self.HorL = validater.validate_input('Higher or Lower? ', "H/L")
 
         #Needs to return the variable so it can become global to be inputed into the updates function
@@ -46,7 +46,7 @@ class director:
         #Stores new cards value
         new_value = self.card.value
         card_name = self.card.card_name(new_value)
-        print(f'Next card was: "{card_name}"')
+        print(f'Next card was: "the {card_name} of {self.card.suit}"')
 
         #Connotation for comparing the new value with the old value
         #Updates to the scoring
