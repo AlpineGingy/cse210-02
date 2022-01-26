@@ -8,4 +8,16 @@ class Card:
     
     def card_draw(self):
         self.value = random.randint(1, 13)
+
+    def card_name(self,card_number):
+        card = card_number
+        if card == 11:
+            card = "Jack"
+        elif card == 12:
+            card = "Queen"
+        elif card == 13:
+            card = "King"
+        elif card == 1:
+            card = "Ace"
+        return card
     
