@@ -17,6 +17,7 @@ class director:
         if play == "Y":
             self.isplaying = True
         else:
+            print("Oh well! Thanks for coming! Come back soon!")
             self.isplaying = False
 
         while self.isplaying:
@@ -52,12 +53,17 @@ class director:
         #Updates to the scoring
         if self.HorL == "H" and new_value > old_value:
             self.score += 100
+            print("Great Guess! You got 100 Points!")
         elif self.HorL == "L" and new_value < old_value:
             self.score += 100
+            print("Great Guess! You got 100 Points!")
         elif new_value == old_value:
             self.score = self.score
+            print("It seems it was a draw! You dont lose or receive any points!")
         else:
             self.score -= 75
+            print("Uff! Tough luck! You Lose 75 Points!")
+
         
         #Print updated score
         print(f'Your score is: {self.score}')
@@ -78,6 +84,7 @@ class director:
 
         else:
             play = validater.validate_input('Would you like to draw again? ', "Y/N")
+            print(f"Game Over! Thanks for Playing! You ended with {self.score} points! Good Job!")
             self.isplaying = (play == 'Y')
             
 
