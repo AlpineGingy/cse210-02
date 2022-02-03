@@ -2,6 +2,7 @@
 
 from person import Person
 from parachute import Parachute
+from display import Display
 person = Person()
 
 parachute = Parachute()

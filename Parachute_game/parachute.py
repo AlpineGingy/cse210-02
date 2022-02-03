@@ -7,7 +7,7 @@ class Parachute():
             " _____", #0
             "/     \\",#1
             "\\‾‾‾‾‾/", #2
-            "  \\ /"] #3
+            " \\   /"] #3
 
 #OVERSCORE Character = ‾
 

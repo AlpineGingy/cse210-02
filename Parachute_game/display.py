@@ -1,4 +1,4 @@
-class display:
+class Display():
     def __init__(self):
         self.parachute = ["  _____ "," /_____\ "," \     /","  \ O /"]
         self.body = ["   /|\ ","   / \ ",]
@@ -15,6 +15,13 @@ class display:
         for x in self.body:
             print(x)
 
-    def word_display(self):
-        for x in self.blanks:
-            print(x)
+    def word_display(self,anwser):
+        for x in anwser:
+            print(x,end=" ")
+            
+    def set_blanks(self,word):
+        length = len(word)
+        blanks = []
+        for x in length:
+            blanks.append("-")
+        return blanks
